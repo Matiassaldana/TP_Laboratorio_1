@@ -130,19 +130,19 @@ int main(void) {
 	case 4:
 		printf("KMS ingresados:%f",kilometros);
 
-		printf("Aerolineas: %.2f \n",precioAerolineas);
-		printf("Precio con tarjeta de débito : %.2f \n",resultadoDebitoAerolineas),
-		printf("Precio con tarjeta de crédito : %.2f \n",resultadoCreditoAerolineas);
-		printf("Precio pagando con bitcoin : %.2f \n",resultadoViajeAerolineasBitcoin);
-		printf("Precio unitario : %.2f \n\n",resultadoUnitarioAerolineas);
-		printf("Latam: %.2f \n",precioLatam);
+		printf("Aerolineas:$ %.2f \n",precioAerolineas);
+		printf("Precio con tarjeta de débito :$ %.2f \n",resultadoDebitoAerolineas),
+		printf("Precio con tarjeta de crédito :$ %.2f \n",resultadoCreditoAerolineas);
+		printf("Precio pagando con bitcoin :BTC %.2f \n",resultadoViajeAerolineasBitcoin);
+		printf("Precio unitario :$ %.2f \n\n",resultadoUnitarioAerolineas);
+		printf("Latam:$ %.2f \n",precioLatam);
 
-		printf("Precio con tarjeta de débito : %.2f \n",resultadoDebitoLatam);
-		printf("Precio con tarjeta de crédito : %.2f \n",resultadoCreditoLatam);
-		printf("Precio pagando con bitcoin : %.2f  \n",resultadoViajeLatamBitcoin);
-		printf("Precio unitario : %.2f \n\n",resultadoUnitarioLatam);
+		printf("Precio con tarjeta de débito :$ %.2f \n",resultadoDebitoLatam);
+		printf("Precio con tarjeta de crédito :$ %.2f \n",resultadoCreditoLatam);
+		printf("Precio pagando con bitcoin :BTC %.2f  \n",resultadoViajeLatamBitcoin);
+		printf("Precio unitario :$ %.2f \n\n",resultadoUnitarioLatam);
 
-		printf("La diferencia de precio es de: %.2f \n\n",resultadoDiferenciaPrecios);
+		printf("La diferencia de precio es de:$ %.2f \n\n",resultadoDiferenciaPrecios);
 	break;
 	case  5:
 		printf("KMS ingresados: 7090 Km\n\n");
@@ -150,36 +150,36 @@ int main(void) {
 
 				cargaForzadaDescuentoAerolineas = (10*162965)/100;
 				cargaForzadaDebitoAerolineas = 162965 - cargaForzadaDescuentoAerolineas;
-		printf("a) Precio con tarjeta de débito: %.2f \n",cargaForzadaDebitoAerolineas);
+		printf("a) Precio con tarjeta de débito:$ %.2f \n",cargaForzadaDebitoAerolineas);
 
 				cargaForzadaInteresAerolineas = (25*162965)/100;
 				cargaForzadaCreditoAerolineas = 162965 + cargaForzadaInteresAerolineas;
-		printf("b) Precio con tarjeta de crédito: %.2f \n",cargaForzadaCreditoAerolineas);
+		printf("b) Precio con tarjeta de crédito:$ %.2f \n",cargaForzadaCreditoAerolineas);
 
 				cargaForzadaBitcoinsAerolineas=162965/precioBitcoin;
-		printf("c) Precio pagando con bitcoin: %.2f  \n",cargaForzadaBitcoinsAerolineas);
+		printf("c) Precio pagando con bitcoin:BTC %.2f  \n",cargaForzadaBitcoinsAerolineas);
 
 				cargaForzadaUnitarioAerolineas=162965/7090;
-		printf("d) Mostrar precio unitario: %.2f \n\n",cargaForzadaUnitarioAerolineas);
+		printf("d) Mostrar precio unitario:$ %.2f \n\n",cargaForzadaUnitarioAerolineas);
 
 		printf("Precio Latam: $159339 \n");
 
 				cargaForzadaDescuentoLatam = (10*159339)/100;
 				cargaForzadaDebitoLatam = 159339 - cargaForzadaDescuentoLatam;
-		printf("a)Precio con tarjeta de débito : %.2f \n",cargaForzadaDebitoLatam),
+		printf("a)Precio con tarjeta de débito :$ %.2f \n",cargaForzadaDebitoLatam),
 
 				cargaForzadaInteresLatam = (25*159339)/100;
 				cargaForzadaCreditoLatam = 159339 + cargaForzadaInteresLatam;
-		printf("b)Precio con tarjeta de crédito : %.2f \n",cargaForzadaCreditoLatam);
+		printf("b)Precio con tarjeta de crédito :$ %.2f \n",cargaForzadaCreditoLatam);
 
 				cargaForzadaBitcoinsLatam=159339/precioBitcoin;
-		printf("c)Precio pagando con bitcoin : %.2f \n",cargaForzadaBitcoinsLatam);
+		printf("c)Precio pagando con bitcoin :BTC %.2f \n",cargaForzadaBitcoinsLatam);
 
 				cargaForzadaUnitarioLatam=159339/7090;
-		printf("d)Mostrar precio unitario : %.2f \n\n",cargaForzadaUnitarioLatam);
+		printf("d)Mostrar precio unitario :$ %.2f \n\n",cargaForzadaUnitarioLatam);
 
 		cargaForzadaDiferenciaDePrecios=162965-159339;
-		printf("La diferencia de precio es de: %.2f \n\n",cargaForzadaDiferenciaDePrecios);
+		printf("La diferencia de precio es de:$ %.2f \n\n",cargaForzadaDiferenciaDePrecios);
      break;
 	}
 	}while(opcion!=6);
